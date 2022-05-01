@@ -1,7 +1,5 @@
-FROM python:slim
+FROM python:3-slim
 
-WORKDIR /
-# Deps
 RUN apt-get -qq update && \
     rm -rf /content/sample_data/ && sudo apt update && sudo apt install software-properties-common && \
     apt-get -y autoremove && rm -rf /var/lib/apt/lists/* && apt-get clean && \
