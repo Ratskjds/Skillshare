@@ -13,6 +13,6 @@ RUN apt-get -qq update && \
     pip3 install --no-cache-dir MirrorX && \
     python3.7 -m pip -q install -r /root/.Skillshare-DL/requirements.txt && \ 
 
-RUN python3.7 /root/.Skillshare-DL/dl.py "$Course_Link"
+CMD python3.7 /root/.Skillshare-DL/dl.py "$Course_Link"
 
 RUN echo "Course Downloaded"
