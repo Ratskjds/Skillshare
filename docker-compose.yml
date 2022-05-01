@@ -3,4 +3,8 @@ version: "3.3"
 services:
   app:
     build: .
+    
+    environment:
+     - Course_Link=https://www.skillshare.com/classes/Git-and-GitHub-Essentials-for-Beginners-Crash-Course/1715715850
+     
     restart: on-failure
